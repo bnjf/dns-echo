@@ -1,10 +1,8 @@
 
-FROM alpine:latest
+FROM alpine:3.9
+RUN apk add perl-net-dns
 
-# couldn't find no `perl-net-dns-nameserver`, unfortunately.  get it in with
-# cpanminus.
-RUN apk add perl perl-app-cpanminus make
-RUN cpanm --no-wget Net::DNS::Nameserver
+USER nobody
 COPY main.pl /
 ENV PORT 5353
 ENTRYPOINT ["/main.pl"]
