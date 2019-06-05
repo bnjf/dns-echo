@@ -20,11 +20,11 @@ spec:
         name: dns-echo
         resources:
             requests:
-              memory: "20Mi"
-              cpu: "20m"
+              memory: "10M"
+              cpu: "100m"
             limits:
-              memory: "40Mi"
-              cpu: "40m"
+              memory: "20M"
+              cpu: "200m"
       terminationGracePeriodSeconds: 60
 ---
 apiVersion: v1
