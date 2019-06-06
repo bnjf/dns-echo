@@ -5,7 +5,7 @@ metadata:
     run: dns
   name: dns
 spec:
-  replicas: 3
+  replicas: 7
   minReadySeconds: 60
   selector:
     matchLabels:
