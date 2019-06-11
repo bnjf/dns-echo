@@ -33,10 +33,10 @@ spec:
         resources:
             requests:
               memory: "10M"
-              cpu: "100m"
+              cpu: "10m"
             limits:
               memory: "20M"
-              cpu: "200m"
+              cpu: "20m"
       terminationGracePeriodSeconds: 60
 ---
 apiVersion: v1
